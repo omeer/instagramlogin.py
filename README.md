@@ -1,0 +1,2 @@
+# wordlistgenerator
+test
