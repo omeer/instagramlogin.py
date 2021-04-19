@@ -19,6 +19,7 @@ Bunları exe dosyası olarak inecektir. Masaüstüne kaydetseniz sizin için Dah
 
 Ben,Chrome için anlatacağım;
 
+![indir](https://user-images.githubusercontent.com/57064726/115282136-7fe47180-a152-11eb-814b-8836d3961b5e.png)
 
 
 
