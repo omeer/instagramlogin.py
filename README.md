@@ -20,7 +20,7 @@ Bunları exe dosyası olarak inecektir. Masaüstüne kaydetseniz sizin için Dah
 Ben,Chrome için anlatacağım;
 
 ![GitHub Logo](https://prnt.sc/11pleja)
-Format: ![Alt Text](url)
+Format: ![Alt Text](https://prnt.sc/11pleja)
 
 
 
