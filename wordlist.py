@@ -20,10 +20,10 @@ print("""
 #
 #	[7] Kişiye Özel İsim için Wordlist Oluştur ------>
 #
-#	[8] Kişiye Özel İsim Kombinasyon yapmak için Wordlist Oluştur ------>
+#	[8] Kişiye Özel İsim Kombinasyon yapmak için Wordlist Oluştur ------> 
 
-	[9] Kişiye Özel İsimin Yanında Sayı Wordlist Oluştur -----------> ÖRNEK  omer1  omer2 omer3 ... omer99 gibi
-
+	[9] Kişiye Özel İsimin Yanında Sayı Wordlist Oluştur -----------> ÖRNEK  	omer1  omer2 omer3 ... omer99 gibi
+																				1omer 2omer 3omer... 99omer gibi
 #
 ##############################################################################################################     
  """)
@@ -144,6 +144,11 @@ elif user_Answer=='9':
 		print(liste)
 		file = open(wordlistname+".txt", "a")
 		file.write(liste+"\n")
+	for j in range(0,ozelistek2+1):
+		liste2=str(j)+ozelistek
+		print(liste2)
+		file = open(wordlistname+".txt", "a")
+		file.write(liste2+"\n")
 	print("Başarıyla Wordlistiniz oluşturulmuştur.....")
 	sleep(3)
 else:
