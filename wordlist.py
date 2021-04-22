@@ -22,7 +22,7 @@ print("""
 #
 #	[8] Kişiye Özel İsim Kombinasyon yapmak için Wordlist Oluştur ------>
 
-	[9] Kişiye Özel İsimin Yanında Sayı Wordlist Oluştur -----------> ÖRNEK  omer1  omer2 omer3 omer4 gibi
+	[9] Kişiye Özel İsimin Yanında Sayı Wordlist Oluştur -----------> ÖRNEK  omer1  omer2 omer3 ... omer99 gibi
 
 #
 ##############################################################################################################     
