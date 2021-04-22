@@ -21,6 +21,9 @@ print("""
 #	[7] Kişiye Özel İsim için Wordlist Oluştur ------>
 #
 #	[8] Kişiye Özel İsim Kombinasyon yapmak için Wordlist Oluştur ------>
+
+	[9] Kişiye Özel İsimin Yanında Sayı Wordlist Oluştur -----------> ÖRNEK  omer1  omer2 omer3 omer4 gibi
+
 #
 ##############################################################################################################     
  """)
@@ -105,7 +108,6 @@ elif user_Answer=='6':
 	dosya.close()
 #kisiye özel kelime kombinasyon wordlist oluştur
 elif user_Answer=='7':
-
 	ozelistek = str(input("Girmek İstediğiniz Kelime Giriniz (Büyük Kücük harflere dikkat ediniz)  :"))
 	ozelistek2=int(input("Kaç Tane İstiyorsunuz :"))
 	print("Lütfen Bekleyiniz....")
@@ -132,15 +134,19 @@ elif user_Answer=='8':
 	print("Başarıyla Wordlistiniz oluşturulmuştur.....")
 	sleep(3)
 	dosya.close()
+elif user_Answer=='9':
+
+	ozelistek = str(input("Girmek İstediğiniz Kelime Giriniz (Büyük Kücük harflere dikkat ediniz)  :"))
+	ozelistek2=int(input("Girdiğiniz Kelimenin Yanında Kaç Tane Sayı Girsin (Max Sayı Giriniz) :"))
+	print("Lütfen Bekleyiniz....")
+	for i in range(0,ozelistek2+1):
+		liste=ozelistek+str(i)
+		print(liste)
+		file = open(wordlistname+".txt", "a")
+		file.write(liste+"\n")
+	print("Başarıyla Wordlistiniz oluşturulmuştur.....")
+	sleep(3)
 else:
 	print("Yanlış Tuş Girdiniz.....")
 	print("Programı Yeniden Başlatınız...")
 	sleep(3)
-
- 
-
-
-
-
-
-
