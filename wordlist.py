@@ -14,15 +14,24 @@ print("""
 #            	                                               
 #	[4]Büyük Harfler için [RASTGELE] Wordlist oluştur -------->                                                               
 #        
-#	[5] Kücük Ve Büyük Harfler (Karısık) Wordlist Oluştur ------>                             
-# 
-#	[6] Sayılar için Kombinasyon yapmak için Wordlist Oluştur -----> 
-#
-#	[7] Kişiye Özel İsim için Wordlist Oluştur ------>
-#
-#	[8] Kişiye Özel İsim Kombinasyon yapmak için Wordlist Oluştur ------> 
+#	[5] Kücük Ve Büyük Harfler (Karısık) Wordlist Oluştur ------> 
+	 ÖRNEK >> 	hTjKdM hKqsL pmNrY gibi
+		
 
-	[9] Kişiye Özel İsimin Yanında Sayı Wordlist Oluştur -----------> 
+# 
+#	[6] Sayılar için Kombinasyon yapmak için Wordlist Oluştur ----->
+
+	 ÖRNEK >> 	0001  0002 0003 0004 ... 0011 gibi
+
+
+
+#
+#	[7] Kişiye Özel İsim için Yanında [RASTGELE] SayıWordlist Oluştur ------>
+	 ÖRNEK >> 	omer9239  omer9842 omer3821 ... omer8742
+			  1745omer 2834omer 3732omer... 9421omer gibi
+
+#
+	[8] Kişiye Özel İsimin Yanında Sayı Wordlist Oluştur -----------> 
 	 ÖRNEK >> 	omer1  omer2 omer3 ... omer99
 			  1omer 2omer 3omer... 99omer gibi
 #
@@ -125,17 +134,6 @@ elif user_Answer=='7':
 	print("Başarıyla Wordlistiniz oluşturulmuştur.....")
 	sleep(3)
 elif user_Answer=='8':
-	name = input("Girmek İstediğiniz İsmi Giriniz :")
-	print("Lütfen Bekleyiniz....")
-	for wl in itertools.product(name, repeat = len(name)):
-		liste= name + str(randint(1,99999)) 
-		file = open(wordlistname+".txt", "a")
-		file.write("".join(wl) + "\n")
-		file.write(liste + "\n")
-	print("Başarıyla Wordlistiniz oluşturulmuştur.....")
-	sleep(3)
-	dosya.close()
-elif user_Answer=='9':
 
 	ozelistek = str(input("Girmek İstediğiniz Kelime Giriniz (Büyük Kücük harflere dikkat ediniz)  :"))
 	ozelistek2=int(input("Girdiğiniz Kelimenin Yanında Kaç Tane Sayı Girsin (Max Sayı Giriniz) :"))
